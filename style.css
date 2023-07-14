@@ -89,10 +89,9 @@ nav a {
 }
 
 .banner-img img {
-    width: 500px;
+    width: 100%;
     height: 680px;
-    margin-bottom: 0;
-    padding: 0;
+
 }
 
 .banner-greeting {
@@ -167,7 +166,6 @@ main section {
 .skill-container {
     display: flex;
     gap: 20px;
-    /* margin-bottom: 100px; */
 }
 
 .skill-box {
@@ -290,3 +288,54 @@ textarea {
     border: none;
     padding: 10px 20px;
 } */
+
+.hide {
+    display: none;
+}
+
+/* responsive style */
+
+/* mobile device */
+@media screen and (max-width:576px) {
+
+    .header {
+        background-image: none;
+    }
+
+    .primary-btn {
+        margin-bottom: 10px;
+    }
+
+    .about {
+        padding: 30px;
+    }
+
+    nav,
+    nav>ul,
+    .banner,
+    .resume-container,
+    .skill-container,
+    .about-container,
+    footer {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    nav li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #description,
+    .section-description {
+        padding: 30px;
+    }
+
+    .footer-colum {
+        width: 80%;
+        text-align: center;
+    }
+
+
+}
